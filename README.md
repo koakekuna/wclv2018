@@ -1,6 +1,14 @@
 # WordCamp Lehigh Vallely 2018 Theme
 
-This is the theme used for WordCamp Lehigh Valley's 2018 website. The compiled CSS is loaded by the lehighvalley.wordcamp.org site, while the child theme itself can be used in a local development environment. This CSS file is already set up in WordCamp Lehigh Valley's Remote CSS setting, so any change in this repo will be automatically synced to the live site.
+## Intro
+
+The theme used for WordCamp Lehigh Valley's 2018 website is [CampSite 2017](https://make.wordpress.org/community/2017/05/08/the-new-wordcamp-base-theme-campsite-2017/) and is a starter theme based on [_s](https://underscores.me/). It offers 23 widget areas and a new *Day of Event* template, making it easier to highlight the most important info for attendees during the WordCamp.
+
+We are using Remote CSS and a webhook in this repo to automatically sync the root style.css file with the WordCamp.org [site](https://2018.lehighvalley.wordcamp.org/). That means everytime a change is pushed, our styles will be downloaded, sanitized, minified, stored as a local copy, then enqueued as a stylesheet alongsie the theme's default stylesheet.
+
+## Styleguide
+
+## Local Development Setup
 
 Useful links for development:
 
