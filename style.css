@@ -12,7 +12,7 @@
 }
 
 .home .site-header .site-branding {
-  padding: 1.5rem 3rem;
+  padding: 10.5rem 3rem;
 }
 
 .site-branding {
@@ -50,7 +50,7 @@
 
 /* Navigation */
 .site-navigation {
-  background: yellow;
+  background: var(--color-brand-secondary);
 }
 
 .menu {
@@ -73,7 +73,7 @@
 
 .menu-item a {
   display: block;
-  color: yellow;
+  color: var(--color-brand-primary);
   padding: .5rem 1rem;
   text-decoration: none;
   transition: all .1s ease-in-out;
