@@ -1,0 +1,55 @@
+/* Header */
+.site-header {
+  position: relative;
+  background-image:url('https://2018.lehighvalley.wordcamp.org/files/2018/04/banner_blue_fade.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.home .site-header .site-branding {
+  padding: 10.5rem 3rem;
+}
+
+.site-title {
+	margin: 0;
+	font-size: 1.5625em;
+	line-height: 1;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffffe6;
+}
+
+.site-title a {
+  display: block;
+  color: #3497db;
+}
+
+/* Navigation */
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu-item {
+  position: relative;
+  margin: 0;
+  display: block;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+}
+
+.menu-item a {
+  display: block;
+  color: #ef5f33;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+}
+
+
