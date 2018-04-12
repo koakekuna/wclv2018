@@ -73,7 +73,7 @@
 
 .menu-item a {
   display: block;
-  color: var(--color-brand-primary);
+  color: yellow;
   padding: .5rem 1rem;
   text-decoration: none;
   transition: all .1s ease-in-out;
