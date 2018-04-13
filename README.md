@@ -1,3 +1,5 @@
+[![](https://2018.lehighvalley.wordcamp.org/files/2018/04/WordCamp-GearLogo-300x300.png)](https://2018.lehighvalley.wordcamp.org/)
+
 # [WordCamp Lehigh Vallely 2018](https://2018.lehighvalley.wordcamp.org/)
 
 ## Introduction
