@@ -1,12 +1,12 @@
 [![](https://2018.lehighvalley.wordcamp.org/files/2018/04/WordCamp-GearLogo-300x300.png)](https://2018.lehighvalley.wordcamp.org/)
 
-# [WordCamp Lehigh Vallely 2018](https://2018.lehighvalley.wordcamp.org/)
+# WordCamp Lehigh Valley 2018 [#wclv2018](https://2018.lehighvalley.wordcamp.org/)
 
 ## Introduction
 
 The theme used for WordCamp Lehigh Valley's 2018 website is [CampSite 2017](https://make.wordpress.org/community/2017/05/08/the-new-wordcamp-base-theme-campsite-2017/) and is a starter theme based on [_s](https://underscores.me/). It offers 23 widget areas and a new *Day of Event* template, making it easier to highlight the most important info for attendees during the WordCamp.
 
-We are using Remote CSS and a webhook in this repo to automatically sync the root style.css file with the WordCamp.org . That means everytime a change is pushed, our styles will be downloaded, sanitized, minified, stored as a local copy, then enqueued as a stylesheet alongside the theme's default stylesheet.
+We are using Remote CSS and a webhook in this repo to automatically sync the root style.css file with the WordCamp.org site. Everytime a change is pushed, our styles will be downloaded, sanitized, minified, stored as a local copy, then enqueued as a stylesheet alongside the theme's default stylesheet. Pretty sweet! 
 
 ## Git Workflow
 
@@ -21,7 +21,7 @@ cd ~/sites
 git clone https://github.com/koakekuna/wclv2018.git
 ```
 4. Make changes to the repo with your text editor or IDE of choice. Remember only the root `style.css` file is synced with the WordCamp site.
-5. Add all the changes
+5. Add your changes. This will stage all of the changed files to be commited.
 ```
 git add .
 ```
@@ -29,7 +29,7 @@ git add .
 ```
 git commit -m "add header styles"
 ```
-7. Push your changes to the repo. Congratulations! The WordCamp site should be updated with the changes that you made. :smile: :thumbsup:
+7. Push your changes to the repo. Congratulations :thumbsup:! The WordCamp site should be updated with the changes that you made. :smile:
 ```
 git push
 ```
@@ -41,12 +41,13 @@ git pull
 ```
 2. Repeat steps 4-7 from the instructions for First Contribution.
 
-Check out [Pro Git](https://git-scm.com/book/en/v2) for further documentation and examples.
+This is a simplified workflow, but should get you up and running. If you have any questions, reach out to me, or check out [Pro Git](https://git-scm.com/book/en/v2) for further documentation and examples.
 
 ## Local Development Setup
 To be completed :construction:
 
 ## Style Guide
+To be completed :construction:
 
 ### Colors
 ```
