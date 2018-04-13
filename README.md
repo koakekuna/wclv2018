@@ -6,11 +6,56 @@ The theme used for WordCamp Lehigh Valley's 2018 website is [CampSite 2017](http
 
 We are using Remote CSS and a webhook in this repo to automatically sync the root style.css file with the WordCamp.org . That means everytime a change is pushed, our styles will be downloaded, sanitized, minified, stored as a local copy, then enqueued as a stylesheet alongside the theme's default stylesheet.
 
-## Style Guide
-To be completed
+## Git Workflow
+
+### First Contribution
+1. If you don't have one already, create a [github profile](https://github.com). Message or email me your username so I can add you as a contributor. (You can also star this repository if you'd like :stuck_out_tongue_winking_eye:)
+2. In your terminal or command line program, move into the directory you'd like the project to reside.
+```
+cd ~/sites
+```
+3. Clone the repository. This will create a folder called wclv2018 containing all of the content on the repo.
+```
+git clone https://github.com/koakekuna/wclv2018.git
+```
+4. Make changes to the repo with your text editor or IDE of choice. Remember only the root `style.css` file is synced with the WordCamp site.
+5. Add all the changes
+```
+git add .
+```
+6. Make a commit with a short message. It's recommended to use an action verb in the present tense for the first word (e.g. fix, update, remove, etc...).
+```
+git commit -m "add header styles"
+```
+7. Push your changes to the repo. Congratulations! The WordCamp site should be updated with the changes that you made. :smile: :thumbsup:
+```
+git push
+```
+
+### Subsequent Contributions
+1. Make sure you're in your local wclv2018 folder. Pull the most recent changes from the repository.
+```
+git pull
+```
+2. Repeat steps 4-7 from the instructions for First Contribution.
+
+Check out [Pro Git](https://git-scm.com/book/en/v2) for further documentation and examples.
 
 ## Local Development Setup
-To be completed
+To be completed :construction:
+
+## Style Guide
+
+### Colors
+```
+$color-brand-primary: #990303;
+$color-brand-secondary: #d39740;
+$color-text: #252525;
+$color-text-weak: #383838
+$color-text-strong: #000000;
+$color-text-weak-invert: #dfdfdf;
+$color-text-strong-invert: #ffffff;
+```
 
 ## Useful links
 
