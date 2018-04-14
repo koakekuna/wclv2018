@@ -49,8 +49,13 @@
 }
 
 /* Navigation */
-.site-navigation {
-  background: var(--color-brand-secondary);
+.main-navigation {
+  font-size: 0.875rem;
+	display: flex;
+	justify-content: center;
+	color: #990303;
+	background-color: #dfdfdf;
+	border-top: 5px solid #990303;
 }
 
 .menu {
@@ -64,7 +69,7 @@
   position: relative;
   margin: 0;
   display: block;
-  font-family: 'Open Sans', arial, sans-serif;
+  font-family: 'Montserrat', arial, sans-serif;
   font-size: 1em;
   text-transform: uppercase;
   font-weight: 700;
