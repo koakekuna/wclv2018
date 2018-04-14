@@ -79,6 +79,28 @@
   transition: all .1s ease-in-out;
 }
 
+/* Main Content */
+
 .home .entry-header {
   display: none;
+}
+
+.entry-content {
+	margin-top: -4rem;
+}
+
+.home-top-block {display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  background: #990303;
+  border: 3px solid #990303;
+  color: #fff;
+}
+
+.home-top-block p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: .5rem auto;
 }
