@@ -19,7 +19,7 @@ cd ~/sites
 ```
 git clone https://github.com/koakekuna/wclv2018.git
 ```
-4. Make changes to the repo with your text editor or IDE of choice. Remember only the root `style.css` file is synced with the WordCamp site.
+4. Make changes to the repo with your text editor or IDE of choice. Remember only the root `style.css` file is synced with the WordCamp site. (This is a test change by Jamie.)
 5. Add your changes. This will stage all of the changed files to be commited.
 ```
 git add .
