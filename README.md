@@ -43,7 +43,24 @@ git pull
 This is a simplified workflow, but it should get you up and running. If you have any questions, reach out to me, or check out the incredible free book [Pro Git](https://git-scm.com/book/en/v2) for further documentation and examples.
 
 ## Local Development Setup
-To be completed :construction:
+1. In your terminal, change directories into whereever your local copy of this repository resides.
+```
+cd ~/sites/wclv2018
+```
+2. Pull the most recent changes
+```
+git pull
+```
+3. Install all the libraries and modules we'll need for development, as specified in `package.json`. This will create a node_modules folder and stash them inside here.
+```
+npm install
+```
+4. Convert the sass found in `style.scss` to regular css in `style.css`
+```
+gulp sass
+```
+
+To be continued :construction:
 
 ## Style Guide
 To be completed :construction:
