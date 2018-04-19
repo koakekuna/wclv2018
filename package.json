@@ -1,0 +1,26 @@
+{
+  "name": "wclv2018",
+  "version": "1.0.0",
+  "description": "WordCamp Lehigh Valley 2018",
+  "main": "gulp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koakekuna/wclv2018.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Koa Kekuna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koakekuna/wclv2018/issues"
+  },
+  "homepage": "https://github.com/koakekuna/wclv2018#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
