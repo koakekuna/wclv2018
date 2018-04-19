@@ -10,28 +10,28 @@ We are using Remote CSS and a webhook in this repo to automatically sync the roo
 ## Git Workflow
 
 ### First Contribution
-1. If you don't have one already, create a [github profile](https://github.com). Message or email me your username so I can add you as a contributor. (You can also star this repository if you'd like :star2:)
+1. If you don't have one already, create a [github profile](https://github.com). Message or email me your username so I can add you as a contributor. (You can also :star2: this repository if you'd like)
 2. In your terminal or command line program, move into the directory you'd like the project to reside.
-```
-cd ~/sites
-```
+  ```
+  cd ~/sites
+  ```
 3. Clone the repository. This will create a folder called wclv2018 containing all of the content on the repo.
-```
-git clone https://github.com/koakekuna/wclv2018.git
-```
-4. Make changes to the repo with your text editor or IDE of choice. Remember only the root `style.css` file is synced with the WordCamp site. (This is a test change by Jamie.)
+  ```
+  git clone https://github.com/koakekuna/wclv2018.git
+  ```
+4. Make changes to the repo with your text editor or IDE of choice. Remember only the root `style.css` file is synced with the WordCamp site.
 5. Add your changes. This will stage all of the changed files to be commited.
-```
-git add .
-```
+  ```
+  git add .
+  ```
 6. Make a commit with a short message. It's recommended to use an action verb in the present tense for the first word (e.g. fix, update, remove, etc...).
-```
-git commit -m "add header styles"
-```
-7. Push your changes to the repo. Congratulations! The WordCamp site should be updated with the changes that you made. :thumbsup:
-```
-git push
-```
+  ```
+  git commit -m "add header styles"
+  ```
+7. Push your changes to the repo. Congratulations – The WordCamp site should be updated with the changes that you made! :tada: :thumbsup:
+  ```
+  git push
+  ```
 
 ### Subsequent Contributions
 1. Make sure you're in your local wclv2018 folder. Pull the most recent changes from the repository.
@@ -43,30 +43,34 @@ git pull
 This is a simplified workflow, but it should get you up and running. If you have any questions, reach out to me, or check out the incredible free book [Pro Git](https://git-scm.com/book/en/v2) for further documentation and examples.
 
 ## Local Development Setup
-1. In your terminal, change directories into whereever your local copy of this repository resides.
-```
-cd ~/sites/wclv2018
-```
+1. In your terminal, change directories into wherever your local copy of this repository resides.
+  ```
+  cd ~/sites/wclv2018
+  ```
 2. Pull the most recent changes
-```
-git pull
-```
+  ```
+  git pull
+  ```
 3. Install all the libraries and modules we'll need for development, as specified in `package.json`. This will create a node_modules folder and stash them inside here.
-```
-npm install
-```
+  ```
+  npm install
+  ```
 4. Convert the sass found in `style.scss` to regular css in `style.css`
-```
-gulp sass
-```
+  ```
+  gulp sass
+  ```
+5. If you'd like, you can also "watch" for changes to `style.scss`. Anytime you make a change, it will automatically detect the change, and run `gulp sass` to convert the file to css.
+  ```
+  gulp sass:watch
+  ```
 
 To be continued :construction:
 
 ## Style Guide
 To be completed :construction:
 
-### Colors
-```
+### Colors :traffic_light:
+```scss
 $color-brand-primary: #990303;
 $color-brand-secondary: #d39740;
 $color-text: #252525;
