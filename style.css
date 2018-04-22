@@ -46,7 +46,7 @@
   font-size: 0.875rem;
   display: flex;
   justify-content: center;
-  color: #990303;
+  color: #383838;
   background-color: #ffffff;
   border-top: 5px solid #990303; }
 
@@ -68,16 +68,28 @@
   .menu-item a {
     display: block;
     color: #990303;
-    padding: .5rem 1rem;
+    padding: 1.5rem 2rem;
     text-decoration: none;
     transition: all .1s ease-in-out; }
+  .menu-item a:hover {
+    color: #ffffff;
+    background-color: #990303; }
+
+.menu-item-has-children > a:after {
+  position: relative;
+  display: inline-block;
+  border: .25rem solid transparent;
+  margin-left: .5rem;
+  vertical-align: middle;
+  border-top-color: #990303;
+  content: ""; }
 
 .sub-menu a {
   background: #383838;
   color: #dfdfdf; }
 
 .sub-menu a:hover {
-  background: white;
+  background: #ffffff;
   color: #990303; }
 
 /* Main Content */

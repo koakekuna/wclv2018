@@ -61,9 +61,9 @@ $color-text-strong-invert: #ffffff;
   font-size: 0.875rem;
 	display: flex;
 	justify-content: center;
-	color: $color-brand-primary;
+	color: $color-text-weak;
 	background-color: $color-text-strong-invert;
-	border-top: 5px solid $color-brand-primary;
+  border-top: 5px solid $color-brand-primary;
 }
 
 .menu {
@@ -85,20 +85,34 @@ $color-text-strong-invert: #ffffff;
   a {
     display: block;
     color: $color-brand-primary;
-    padding: .5rem 1rem;
+    padding: 1.5rem 2rem;
     text-decoration: none;
     transition: all .1s ease-in-out;
   }
+  a:hover {
+    color: $color-text-strong-invert;
+    background-color: $color-brand-primary;
+  }
+}
+
+.menu-item-has-children > a:after {
+  position: relative;
+  display: inline-block;
+  border: .25rem solid transparent;
+  margin-left: .5rem;
+  vertical-align: middle;
+  border-top-color: $color-brand-primary;
+  content: "";
 }
 
 .sub-menu a {
-	background: #383838;
-	color: #dfdfdf;
+	background: $color-text-weak;
+	color: $color-text-weak-invert;
 }
 
 .sub-menu a:hover {
-	background: white;
-	color: #990303;
+	background: $color-text-strong-invert;
+	color: $color-brand-primary;
 }
 
 /* Main Content */
