@@ -15,7 +15,7 @@
 
 .site-title {
   margin: 0;
-  font-size: 3.25em;
+  font-size: 2.75rem;
   line-height: 1;
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 700;
@@ -39,8 +39,7 @@
     content: ""; }
 
 .site-description {
-  font-size: 2.75em;
-  margin-bottom: 0; }
+  font-size: 1.5rem; }
 
 /* Navigation */
 .main-navigation {
