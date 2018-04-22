@@ -121,9 +121,13 @@
   display: none;
 }
 
+.home .entry-content {
+  margin-top: -8rem;
+}
+
+.entry-header,
 .entry-content {
   max-width: 1000px;
-  margin-top: -8rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -146,12 +150,27 @@
 }
 
 /* Footer */
+.site-footer {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-info {
+  text-align: center;
+}
+
+.site-info-generator {
+  color: #990303;
+  text-decoration: none;
+}
+
 .site-info-network {
   position: relative;
   display: block;
   width: 3.75rem;
   height: 3.75rem;
-  margin: 0 auto;
+  margin: 15px auto;
   margin-bottom: 1.5rem;
   color: #fff;
   text-indent: -9999px;
@@ -172,7 +191,7 @@
   margin-left: -.9375rem;
   margin-bottom: -1.875rem;
   width: 1.875rem;
-  height: 6.25rem;
+  height: 4rem;
   background: #990303;
   transition: all .1s ease;
   content: "";
