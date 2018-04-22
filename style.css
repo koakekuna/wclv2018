@@ -6,7 +6,7 @@
   background-size: cover; }
 
 .home .site-header .site-branding {
-  padding: 1.5rem 3rem; }
+  padding: 1.5rem 3rem 0 3rem; }
 
 .site-branding {
   background: #ffffff;
@@ -15,14 +15,16 @@
 
 .site-title {
   margin: 0;
-  font-size: 1.5625em;
+  font-size: 3.25em;
   line-height: 1;
   font-family: 'Open Sans', Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #dfdfdf; }
   .site-title a {
-    display: block; }
+    display: block;
+    text-decoration: none;
+    color: #000000; }
   .site-title a:before {
     display: block;
     width: 180px;
@@ -35,6 +37,10 @@
     background-image: url(https://2018.lehighvalley.wordcamp.org/files/2018/04/WordCamp-GearLogo.png);
     background-size: 100%;
     content: ""; }
+
+.site-description {
+  font-size: 2.75em;
+  margin-bottom: 0; }
 
 /* Navigation */
 .main-navigation {
@@ -81,7 +87,7 @@
 
 .entry-content {
   max-width: 1000px;
-  margin-top: -4rem;
+  margin-top: -8rem;
   margin-left: auto;
   margin-right: auto; }
 
