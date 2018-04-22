@@ -4,7 +4,7 @@ const sass = require("gulp-sass");
 gulp.task("sass", () => {
   return gulp
     .src("./style.scss")
-    .pipe(sass().on("error", sass.logError))
+    .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
     .pipe(gulp.dest("./"));
 });
 
