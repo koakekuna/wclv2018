@@ -121,13 +121,18 @@ $color-text-strong-invert: #ffffff;
 
 /* Main Content */
 
-.home .entry-header {
-  display: none;
+.home {
+  .entry-header {
+    display: none;
+  }
+  .entry-content {
+    margin-top: -8rem;
+  }
 }
 
+.entry-header,
 .entry-content {
   max-width: 1000px;
-  margin-top: -8rem;
   margin-left: auto;
   margin-right: auto;
 }
