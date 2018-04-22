@@ -86,6 +86,16 @@ $color-text-strong-invert: #ffffff;
   }
 }
 
+.sub-menu a {
+	background: #383838;
+	color: #dfdfdf;
+}
+
+.sub-menu a:hover {
+	background: white;
+	color: #990303;
+}
+
 /* Main Content */
 
 .home .entry-header {
