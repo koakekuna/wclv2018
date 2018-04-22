@@ -149,6 +149,12 @@
   margin: .5rem auto;
 }
 
+/* Sidebar */
+aside.widget-area {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* Footer */
 .site-footer {
   max-width: 1000px;
