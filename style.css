@@ -1,4 +1,14 @@
 /* Variables */
+/* Elements */
+h2 {
+  color: #252525;
+}
+
+a {
+  color: #d39740;
+  text-decoration: none;
+}
+
 /* Header */
 .site-header {
   position: relative;
@@ -52,11 +62,11 @@
 
 /* Navigation */
 .main-navigation {
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   display: flex;
   justify-content: center;
   color: #383838;
-  background-color: #ffffff;
+  background-color: #dfdfdf;
   border-top: 5px solid #990303;
 }
 

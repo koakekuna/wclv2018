@@ -1,11 +1,22 @@
 /* Variables */
 $color-brand-primary: #990303;
-$color-brand-secondary: #383838;
+$color-brand-secondary: #d39740;
 $color-text: #252525;
 $color-text-weak: #383838;
 $color-text-strong: #000000;
 $color-text-weak-invert: #dfdfdf;
 $color-text-strong-invert: #ffffff;
+
+/* Elements */
+
+h2 {
+  color: $color-text;
+}
+
+a {
+  color: $color-brand-secondary;
+  text-decoration: none;
+}
 
 /* Header */
 .site-header {
@@ -58,11 +69,11 @@ $color-text-strong-invert: #ffffff;
 
 /* Navigation */
 .main-navigation {
-  font-size: 0.875rem;
+  font-size: 1.2rem;
 	display: flex;
 	justify-content: center;
 	color: $color-text-weak;
-	background-color: $color-text-strong-invert;
+	background-color: $color-text-weak-invert;
   border-top: 5px solid $color-brand-primary;
 }
 
