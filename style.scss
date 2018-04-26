@@ -172,12 +172,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* What will be at WCLVPA for you? */
-.home-column.usr-lvl .wp-block-column {
+.usr-lvl .wp-block-column {
   border: 1px solid $color-brand-primary;
   background: $color-text-weak-invert;
 } 
 
-.home-column.usr-lvl .wp-block-column h5 {
+.usr-lvl .wp-block-column h4 {
   color: $color-text-strong;
   background: $color-brand-primary;
   padding: .5rem;
