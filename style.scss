@@ -197,22 +197,21 @@ aside.widget-area {
   background: $color-text-weak-invert;
 }
 
-.site-footer h2.widget-title {
-  font-size: 2.4rem;
+.wcb_widget_sponsors {
   text-align: center;
-  margin-bottom: 1em;
-}
-
-.sponsor-level-gold h4 {
-  color: #d59b1e;
-}
-
-.sponsor-level-silver h4 {
-  color: #6c7d8e;
-}
-
-.sponsor-level-bronze h4 {
-  color: #cc5e1c;
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1em;
+  } 
+  .gold h4 {
+    color: #d59b1e;
+  }
+  .silver h4 {
+    color: #6c7d8e;
+  }
+  .bronze h4 {
+    color: #cc5e1c;
+  }
 }
 
 .site-info {
