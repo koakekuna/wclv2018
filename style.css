@@ -182,6 +182,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
 }
 
+/* WCLV2017 Gallery */
+.wclv2017-gallery {
+  margin-left: 0;
+  padding: 0;
+}
+
 /* Sidebar */
 aside.widget-area {
   max-width: 1000px;
@@ -245,12 +251,11 @@ aside.widget-area {
 .site-info-network:after {
   position: absolute;
   left: 50%;
-  top: 1.875rem;
-  z-index: -1;
+  top: 3.275rem;
   margin-left: -.9375rem;
   margin-bottom: -1.875rem;
   width: 1.875rem;
-  height: 4rem;
+  height: 2rem;
   background: #990303;
   transition: all .1s ease;
   content: "";
