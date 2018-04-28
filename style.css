@@ -29,16 +29,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 .custom-header-media {
   display: block;
-  width: 180px;
-  height: 180px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1rem;
+  width: 200px;
+  height: 200px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url(https://2018.lehighvalley.wordcamp.org/files/2018/04/WordCamp-GearLogo.png);
@@ -144,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home .entry-content {
-  margin-top: -8rem;
+  margin-top: -5rem;
 }
 
 .entry-header,
