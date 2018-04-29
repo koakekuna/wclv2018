@@ -37,13 +37,13 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem 0;;
+  padding: .5rem 0;;
 }
 
 .custom-header-media {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url(https://2018.lehighvalley.wordcamp.org/files/2018/04/WordCamp-GearLogo.png);
@@ -138,6 +138,17 @@ h1, h2, h3, h4, h5, h6 {
 	color: $color-brand-primary;
 }
 
+/* Banner Image */
+.widget_media_image {
+  overflow: hidden;
+}
+
+.banner-image {
+  height: 100vh;
+  max-height: 400px;
+  border-bottom: 6px solid $color-brand-primary;
+}
+
 /* Main Content */
 
 .home {
@@ -145,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .entry-content {
-    margin-top: -5rem;
+    margin-top: -7.5rem;
   }
 }
 
@@ -154,6 +165,9 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+.home-top-blocks {
+  margin-bottom: 4rem;
 }
 
 .home-top-block {display: inline-block;
@@ -169,10 +183,6 @@ h1, h2, h3, h4, h5, h6 {
     color: $color-text-strong-invert;
     margin: .5rem auto;
   }
-}
-
-.header-widgets-block img {
-  border-bottom: 6px solid #990303;
 }
 
 /* What will be at WCLVPA for you? */
