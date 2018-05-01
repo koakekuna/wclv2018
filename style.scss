@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media only screen and (max-width: 1024px) {
   .menu {
-    display: flex;
+    display: flex !important /* override display block from theme media query */;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -163,6 +163,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .content-widgets {
+    display: none;
+  }
+}
 /* Main Content */
 
 .home {
@@ -176,8 +181,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 1024px) {
   .home .entry-content {
-    margin-top: -5.5rem;
-    padding: 0 3rem;
+    margin-top: 0;
+    padding: 0 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .home .entry-content {
+    margin-top: 0;
+    padding: 0 1rem;
   }
 }
 
@@ -191,7 +203,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 4rem;
 }
 
-.home-top-block {display: inline-block;
+.home-top-block {
+  display: inline-block;
   vertical-align: middle;
   box-shadow: 0 0 1px transparent;
   position: relative;
@@ -205,7 +218,22 @@ h1, h2, h3, h4, h5, h6 {
     margin: .5rem auto;
   }
 }
-
+@media only screen and (max-width: 767px) {
+  .home-top-blocks {
+    flex-direction: column;
+    width: 100%;
+  }
+  .home-top-block {
+    width: 100% !important; /* overwrite gutenberg styles */
+    margin: 8px 16px !important; /* overwrite gutenberg styles */
+    img {
+      width: 42px;
+    }
+  }
+  .wp-block-text-columns .wp-block-column:first-child {
+    margin-left: 16px !important; /* overwrite gutenberg styles */
+  }
+}
 /* What will be at WCLVPA for you? */
 .user-lvl .wp-block-column {
   border: 1px solid $color-brand-primary;
@@ -218,6 +246,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: .5rem;
   font-size: 1.1rem;
   margin-top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .user-lvl {
+    flex-direction: column;
+    width: 100%;
+    .wp-block-column {
+      width: 100% !important; /* overwrite gutenberg styles */
+    }
+  }
 }
 
 /* WCLV2017 Gallery */
