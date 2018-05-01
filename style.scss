@@ -142,16 +142,6 @@ h1, h2, h3, h4, h5, h6 {
 .widget_media_image {
   overflow: hidden;
   height: 400px;
-  position: relative;
-}
-
-.banner-image {
-  max-width: none !important; /* override WP inline image styles */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -220px;
-  margin-left: -600px;
   border-bottom: 6px solid $color-brand-primary;
 }
 
