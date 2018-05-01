@@ -205,6 +205,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /* Main Content */
+.site-content {
+  background: url("https://2018.lehighvalley.wordcamp.org/files/2018/05/WCLVPA-Skyline-Banner-Light-Grey.png") bottom center repeat-x;
+	background-size: contain;
+}
 
 .home {
   .entry-header {
@@ -212,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .entry-content {
     margin-top: -7.5rem;
-    margin-bottom: -10rem;
+    margin-bottom: 10rem;
   }
   .hentry {
     margin-bottom: 0;
