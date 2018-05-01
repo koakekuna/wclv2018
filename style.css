@@ -83,6 +83,34 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 10px solid #990303;
 }
 
+@media only screen and (max-width: 767px) {
+  .main-navigation {
+    background-color: #990303;
+  }
+  .menu-toggle {
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .05em;
+    color: #ffffff;
+    background-color: #990303;
+    cursor: pointer;
+    border: none;
+  }
+  .menu-toggle:after {
+    position: relative;
+    top: -0.125rem;
+    border: .375rem solid transparent;
+    margin-left: .5rem;
+    border-top-color: #ffffff;
+    content: "";
+  }
+}
+
 .menu {
   list-style: none;
   margin: 0;
@@ -124,7 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
   .menu {
     display: flex !important;
     flex-wrap: wrap;
@@ -162,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 767px) {
-  .content-widgets {
+  #content-widgets {
     display: none;
   }
 }
@@ -178,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (max-width: 1024px) {
   .home .entry-content {
-    margin-top: 0;
+    margin-top: -5.5rem;
     padding: 0 1.5rem;
   }
 }
@@ -186,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 767px) {
   .home .entry-content {
     margin-top: 0;
-    padding: 0 1rem;
+    padding: 1rem;
   }
 }
 
@@ -226,14 +254,14 @@ h1, h2, h3, h4, h5, h6 {
   .home-top-block {
     width: 100% !important;
     /* overwrite gutenberg styles */
-    margin: 8px 16px !important;
+    margin: 8px 0 !important;
     /* overwrite gutenberg styles */
   }
   .home-top-block img {
     width: 42px;
   }
   .wp-block-text-columns .wp-block-column:first-child {
-    margin-left: 16px !important;
+    margin-left: 0 !important;
     /* overwrite gutenberg styles */
   }
 }
@@ -260,6 +288,7 @@ h1, h2, h3, h4, h5, h6 {
   .user-lvl .wp-block-column {
     width: 100% !important;
     /* overwrite gutenberg styles */
+    margin: 1rem 0;
   }
 }
 
@@ -279,6 +308,12 @@ aside.widget-area {
 .site-footer {
   margin: 0 auto;
   background: #dfdfdf;
+}
+
+@media only screen and (max-width: 767px) {
+  .site-footer {
+    padding: 1rem 1rem 0 1rem;
+  }
 }
 
 .wcb_widget_sponsors {
@@ -310,6 +345,12 @@ aside.widget-area {
   /* overwrite sponsor widget default styles */
   max-width: 500px !important;
   max-height: 100px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .wcb_widget_sponsors .sponsor-logo img {
+    max-width: 250px !important;
+  }
 }
 
 .site-info {
