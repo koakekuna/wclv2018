@@ -28,6 +28,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: .5rem 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .custom-header {
+    flex-direction: column;
+  }
+}
+
 .custom-header-media {
   display: block;
   width: 150px;
@@ -89,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   display: block;
   font-family: 'Montserrat', arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 700;
   text-align: left;
@@ -118,6 +124,14 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
 }
 
+@media only screen and (max-width: 1024px) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .page-navigation-container ul ul {
   top: 69px !important;
   /* reposition submenu below menu */
@@ -140,6 +154,13 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 6px solid #990303;
 }
 
+@media only screen and (max-width: 1024px) {
+  .banner-image {
+    max-width: 1000px !important;
+    /* overwrite auto inline img styles */
+  }
+}
+
 /* Main Content */
 .home .entry-header {
   display: none;
@@ -147,6 +168,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .home .entry-content {
   margin-top: -7.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .home .entry-content {
+    margin-top: -5.5rem;
+    padding: 0 3rem;
+  }
 }
 
 .entry-header,
