@@ -219,6 +219,9 @@ aside.widget-area {
     font-size: 2.4rem;
     margin-bottom: 1em;
   } 
+  h4 {
+    font-size: 2rem;
+  }
   .gold h4 {
     color: #d59b1e;
   }
@@ -228,6 +231,11 @@ aside.widget-area {
   .bronze h4 {
     color: #cc5e1c;
   }
+}
+
+.wcb_widget_sponsors .sponsor-logo img {
+  max-width: 500px;
+  max-height: 100px;
 }
 
 .site-info {
