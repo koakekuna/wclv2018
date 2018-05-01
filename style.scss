@@ -29,15 +29,11 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
-.home .site-header .site-branding {
-  padding: 1.5rem 3rem 0 3rem;
-}
-
 .custom-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .5rem 0;;
+  padding: .5rem 0;
 }
 
 .custom-header-media {
@@ -49,11 +45,13 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url(https://2018.lehighvalley.wordcamp.org/files/2018/04/WordCamp-GearLogo.png);
   background-size: 100%;
   content: "";
+  margin: .5rem;
 }
 
 .site-branding {
   background: $color-text-strong-invert;
   text-align: center;
+  margin: 0 1rem;
 }
 
 .site-title {
@@ -73,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-description {
   font-size: 1.5rem;
+  margin: .25rem;
 }
 
 /* Navigation */
@@ -234,8 +233,9 @@ aside.widget-area {
 }
 
 .wcb_widget_sponsors .sponsor-logo img {
-  max-width: 500px;
-  max-height: 100px;
+  /* overwrite sponsor widget default styles */
+  max-width: 500px !important;
+  max-height: 100px !important;
 }
 
 .site-info {
