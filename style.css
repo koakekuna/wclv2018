@@ -119,7 +119,8 @@ h1, h2, h3, h4, h5, h6 {
   .menu-item-has-children .dropdown-toggle {
     display: none;
   }
-  .menu-item a {
+  .submenu .menu-item a {
+    background: #990303;
     color: #ffffff;
   }
   .page-navigation-container ul ul {
@@ -127,19 +128,18 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     box-shadow: none;
   }
-  .sub-menu a,
-  .sub-menu li {
+  .toggle-menu .sub-menu li {
     background-color: #990303;
     width: 100% !important;
-  }
-  .sub-menu li {
     margin: 0;
   }
-  .sub-menu a {
+  .toggle-menu .sub-menu a {
+    background-color: #990303;
+    width: 100% !important;
     padding: 1rem 2.5rem;
     font-size: .9rem;
   }
-  .sub-menu a:before {
+  .toggle-menu .sub-menu a:before {
     position: absolute;
     left: 1.5rem;
     top: 50%;

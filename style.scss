@@ -128,8 +128,9 @@ h1, h2, h3, h4, h5, h6 {
 		display: none;
 	}
 
-	.menu-item a {
-		color: $color-text-strong-invert;
+	.submenu .menu-item a {
+    background: $color-brand-primary;
+    color: $color-text-strong-invert;
 	}
 	
 	.page-navigation-container ul ul {
@@ -137,19 +138,18 @@ h1, h2, h3, h4, h5, h6 {
 		width: 100%;
 		box-shadow: none;
 	}
-	.sub-menu a,
-	.sub-menu li{
-		background-color:$color-brand-primary;
+	.toggle-menu .sub-menu li {
+    background-color:$color-brand-primary;
 		width: 100% !important;
-	}
-	.sub-menu li {
 		margin: 0;
 	}
-	.sub-menu a {
-		padding: 1rem 2.5rem ;
+	.toggle-menu .sub-menu a {
+    background-color:$color-brand-primary;
+		width: 100% !important;
+		padding: 1rem 2.5rem;
 		font-size: .9rem;
 	}
-	.sub-menu a:before {
+	.toggle-menu .sub-menu a:before {
 		position: absolute;
     left: 1.5rem;
     top: 50%;
