@@ -82,13 +82,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
 .menu-toggle {
   padding: 1rem;
   margin: 0;
@@ -119,13 +112,33 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
 }
 
-.menu-item-has-children .dropdown-toggle {
-  display: none;
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.submenu .menu-item a {
-  background: #990303;
+.menu-item {
+  margin: 0;
+  font-family: 'Montserrat', arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.menu-item a {
+  display: block;
   color: #ffffff;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+}
+
+.menu-item-has-children .dropdown-toggle {
+  display: none;
 }
 
 .page-navigation-container ul ul {
@@ -134,20 +147,13 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
 }
 
-.toggle-menu .sub-menu li {
-  background-color: #990303;
-  width: 100% !important;
-  margin: 0;
-}
-
-.toggle-menu .sub-menu a {
-  background-color: #990303;
-  width: 100% !important;
+.sub-menu .menu-item a {
+  width: 100%;
   padding: 1rem 2.5rem;
   font-size: .9rem;
 }
 
-.toggle-menu .sub-menu a:before {
+.sub-menu .menu-item a:before {
   position: absolute;
   left: 1.5rem;
   top: 50%;
@@ -172,22 +178,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .menu-item {
-    position: relative;
-    margin: 0;
-    display: block;
-    font-family: 'Montserrat', arial, sans-serif;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-align: left;
-  }
   .menu-item a {
-    display: block;
     color: #990303;
-    padding: 1.5rem;
-    text-decoration: none;
-    transition: all .1s ease-in-out;
   }
   .menu-item a:hover {
     color: #ffffff;
@@ -201,6 +193,9 @@ h1, h2, h3, h4, h5, h6 {
   .sub-menu a:hover {
     background: #383838;
     color: #dfdfdf;
+  }
+  .menu-item-has-children .dropdown-toggle {
+    display: block;
   }
   .menu-item-has-children > a:after {
     position: relative;
