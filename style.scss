@@ -170,7 +170,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (min-width: 768px){
   .main-navigation {
-    font-size: 1.2rem;
     color: $color-text-weak;
     background-color: $color-text-weak-invert;
     border-top: 10px solid $color-brand-primary;
@@ -181,6 +180,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
   }
   .menu-item {
+    width: auto;
     a {
       color: $color-brand-primary;
       &:hover {
@@ -190,15 +190,30 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   .page-navigation-container ul ul {
-    top: 69px !important; /* reposition submenu below menu */
+    top: 76px !important; /* reposition submenu below menu */
   }
-  .sub-menu a,
-  .sub-menu a:hover {
+  .page-nagvigation-container li {
+    float: none;
+  }
+  .sub-menu {
+    position: absolute;
+    min-width: 250px;
     background: $color-text-weak;
-    color: $color-text-weak-invert;
+    li {
+      width: 100%;
+    }
+    a {
+      background: $color-text-weak;
+      color: $color-text-weak-invert;
+      &:hover {
+        background: $color-brand-primary;
+        color: $color-text-weak-invert;
+      }
+    }
   }
+
   .menu-item-has-children .dropdown-toggle {
-    display: block;
+    display: none;
   }
   .menu-item-has-children > a:after {
     position: relative;

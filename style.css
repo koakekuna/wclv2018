@@ -168,7 +168,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media only screen and (min-width: 768px) {
   .main-navigation {
-    font-size: 1.2rem;
     color: #383838;
     background-color: #dfdfdf;
     border-top: 10px solid #990303;
@@ -178,6 +177,9 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .menu-item {
+    width: auto;
+  }
   .menu-item a {
     color: #990303;
   }
@@ -186,16 +188,30 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #990303;
   }
   .page-navigation-container ul ul {
-    top: 69px !important;
+    top: 76px !important;
     /* reposition submenu below menu */
   }
-  .sub-menu a,
-  .sub-menu a:hover {
+  .page-nagvigation-container li {
+    float: none;
+  }
+  .sub-menu {
+    position: absolute;
+    min-width: 250px;
+    background: #383838;
+  }
+  .sub-menu li {
+    width: 100%;
+  }
+  .sub-menu a {
     background: #383838;
     color: #dfdfdf;
   }
+  .sub-menu a:hover {
+    background: #990303;
+    color: #dfdfdf;
+  }
   .menu-item-has-children .dropdown-toggle {
-    display: block;
+    display: none;
   }
   .menu-item-has-children > a:after {
     position: relative;
