@@ -177,13 +177,13 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .menu-item {
+  #primary-menu > .menu-item {
     width: auto;
   }
-  .menu-item a {
-    color: #990303 !important;
+  #primary-menu > .menu-item > a {
+    color: #990303;
   }
-  .menu-item a:hover {
+  #primary-menu > .menu-item > a:hover {
     color: #ffffff;
     background-color: #990303;
   }

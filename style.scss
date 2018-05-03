@@ -179,10 +179,10 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .menu-item {
+  #primary-menu > .menu-item {
     width: auto;
-    a {
-      color: $color-brand-primary !important /* override selector to be fixed */;
+    > a {
+      color: $color-brand-primary;
       &:hover {
         color: $color-text-strong-invert;
         background-color: $color-brand-primary;
