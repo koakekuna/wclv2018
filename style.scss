@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 768px){
   .main-navigation {
     color: $color-text-weak;
-    background-color: $color-text-weak-invert;
+    background-color: $color-text-weak-invert !important/* override selector to be fixed */;
     border-top: 10px solid $color-brand-primary;
   } 
   .menu {
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   .menu-item {
     width: auto;
     a {
-      color: $color-brand-primary;
+      color: $color-brand-primary !important /* override selector to be fixed */;
       &:hover {
         color: $color-text-strong-invert;
         background-color: $color-brand-primary;
@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .menu-item-has-children .dropdown-toggle {
-    display: none;
+    display: none !important; /* override selector to be fixed */
   }
   .menu-item-has-children > a:after {
     position: relative;

@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 768px) {
   .main-navigation {
     color: #383838;
-    background-color: #dfdfdf;
+    background-color: #dfdfdf !important;
     border-top: 10px solid #990303;
   }
   .menu {
@@ -181,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
   }
   .menu-item a {
-    color: #990303;
+    color: #990303 !important;
   }
   .menu-item a:hover {
     color: #ffffff;
@@ -211,7 +211,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #dfdfdf;
   }
   .menu-item-has-children .dropdown-toggle {
-    display: none;
+    display: none !important;
+    /* override selector to be fixed */
   }
   .menu-item-has-children > a:after {
     position: relative;
