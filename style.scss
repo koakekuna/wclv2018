@@ -248,7 +248,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Main Content */
 .site-content {
   background: url("https://2018.lehighvalley.wordcamp.org/files/2018/05/WCLVPA-Skyline-Banner-Light-Grey.png") bottom center repeat-x;
-	background-size: contain;
+  background-size: contain;
+}
+
+@media only screen and (min-width: 767px) {
+  /* Add side padding on all pages but home page to accommodate sidebar */
+  .page:not(.home) .site-content {
+    padding: 0 3rem;
+    margin: 0 auto;
+  }
 }
 
 .home {
@@ -370,6 +378,20 @@ h1, h2, h3, h4, h5, h6 {
 aside.widget-area {
   max-width: 1000px;
   margin: 0 auto;
+}
+@media screen and (min-width: 767px) {
+  /* For all pages except homepage, float left to accommodate sidebar */
+  #primary:not(.no-sidebar) {
+    float: left;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #secondary {
+    float: right;
+    width: 30%;
+  }
 }
 
 /* Footer */
