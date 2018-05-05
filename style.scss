@@ -252,14 +252,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (min-width: 767px) {
-  /* Add side padding on all pages but home page to accommodate sidebar */
-  .page:not(.home) .site-content {
+  .site-content {
     padding: 0 3rem;
-    margin: 0 auto;
   }
 }
 
 .home {
+  .site-content {
+    padding: 0;
+  }
   .entry-header {
     display: none;
   }
@@ -383,7 +384,7 @@ aside.widget-area {
   /* For all pages except homepage, float left to accommodate sidebar */
   #primary:not(.no-sidebar) {
     float: left;
-    width: 70%;
+    width: 65%;
   }
 }
 
