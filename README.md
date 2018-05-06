@@ -8,11 +8,12 @@
 - [Intro to WordCamp Development](#intro-to-wordcamp-development)
   - [Theme Summary](#theme-summary)
   - [Remote CSS](#remote-css)
-- [Simplified Contributor Workflow](#simplified-contributor-workflow)
+- [How To Contribute With Git and Source Control](#how-to-contribute-with-git-and-source-control)
   - [First Contribution](#first-contribution)
   - [Subsequent Contributions](#subsequent-contributions)
-- [Advanced Contributor Workflow :construction:](#advanced-contributor-workflow-construction)
-- [Style Guide :construction:](#style-guide-construction)
+- [How To Contribute With Sass and Gulp](#how-to-contribute-with-sass-and-gulp)
+- [Setting Up A Local Development Environment](#setting-up-a-local-development-environment)
+- [Style Guide](#style-guide)
   - [Branding](#branding)
 - [Helpful Resources for WordCamp Development](#helpful-resources-for-wordcamp-development)
 
@@ -28,9 +29,9 @@ The theme used for WordCamp Lehigh Valley's 2018 website is [CampSite 2017](http
 
 ### Remote CSS
 
-WordCamps come with a really handy feature called Remote CSS. Found under Apperance > Remote CSS, you'll find you can add a git repository. We use a webhook in this repo to automatically sync a `style.css` file with the live site. Everytime a change is pushed, our styles will be downloaded, sanitized, minified, stored as a local copy, then enqueued as a stylesheet alongside the theme's default stylesheet. Pretty sweet! For this repository, the `style.css` file is found in the root of the directory.
+WordCamps come with a really handy feature called Remote CSS. Found under Apperance > Remote CSS, you'll find you can add a git repository. We use a webhook in this repo to automatically sync a `style.css` file with the live site. Everytime a commit is pushed, our styles will be downloaded, sanitized, minified, stored as a local copy, and finally enqueued as a stylesheet alongside the theme's default stylesheet. Pretty sweet! For this repository, the `style.css` file is found in the root of the directory.
 
-## Simplified Contributor Workflow
+## How To Contribute With Git and Source Control
 
 If this is your first time using git and source control, these instructions will provide a simplified workflow to easily collaborate with others and contribute to the project. This ensures that everyone working on the project is working on the latest version as well as providing a complete history of all changes made in case we ever need to revert back to a previous version.
 
@@ -82,7 +83,7 @@ git pull
 
 2. Repeat steps 4-7 from the instructions for First Contribution.
 
-## Advanced Contributor Workflow :construction:
+## How To Contribute With Sass and Gulp
 
 We can use "build tools" to automate repetitive tasks such as preprocessing, minification, adding browser support, and much more! There are many options out there to accomplish this, but this tutorial will use [Gulp](https://gulpjs.com/).
 
@@ -126,7 +127,25 @@ gulp sass
 gulp sass:watch
 ```
 
-## Style Guide :construction:
+## Setting Up A Local Development Environment
+
+1. Follow the steps outlined [here](https://github.com/WordPress/meta-environment/blob/master/docs/install.md). These instructions will take you through installing VVV, creating a file called `vvv-custom.yml`, and specifying options for the meta-environment. Since we only care about WordCamps, we can keep `"wordcamp.test": true`, and set everything else to `false`.
+
+2. Make sure you've reprovisioned. After that's complete start up VVV.
+
+```bash
+vagrant reload --provision
+vagrant up
+```
+
+3. If you go to [http://wp-meta.test](http://wp-meta.test), you should see links to all of the available sites. Log in to central.wordcamp.test with `admin` and `password`. Go to the network admin dashboard and navigate to sites. You could add an entirely new site, but I ran into some issues, and it's easier to just alter the blank `2014.new-site.wordcamp.test`.
+  i. Go to Edit Site, change the Site Address on the Info tab, as well as Siteurl and Home in the Settings tab. I named it `http://2018.lehighvalley.wordcamp.test`.
+  ii. In `vagrant-local/www/wordpress-meta-environment/wordcamp.test/provision/vvv-hosts`, you'll see a list of all the WordCamp URLs. Change `2014.new-site.wordcamp.test` to `2018.lehighvalley.wordcamp.test`.
+  iii. In your terminal, we need to reload VVV - `vagrant reload`
+
+4. The URL `2018.lehighvalley.wordcamp.test` should work now! To change themes to CampSite 2017, you'll need to enable it at the network level. If you need to copy the live site, sign into it and go to dashboard > Tools > export. This will export a `.xml` file. Then in your local site, go to Dashboard > Tools > WordPress (Run Importer). You might still have to manually update somethings in the customizer.
+
+## Style Guide
 
 ### Branding
 
@@ -149,7 +168,7 @@ $color-text-strong-invert: #ffffff;
 
 ## Helpful Resources for WordCamp Development
 
-[WordCamp Website Tips and Tracks](https://www.thomasvitale.com/wordcamp-website-tips-tricks/)
+[WordCamp Website Tips and Tricks](https://www.thomasvitale.com/wordcamp-website-tips-tricks/)
 
 [Setting up Your WordCamp Theme](https://make.wordpress.org/community/handbook/wordcamp-organizer/first-steps/web-presence/setting-up-your-wordcamp-theme/)
 
