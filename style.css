@@ -14,6 +14,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #990303;
 }
 
+input[type="submit"] {
+  padding: .4375rem 1rem;
+  border: 1px solid #990303;
+  background: #990303;
+  color: #dfdfdf;
+  font-size: 1rem;
+}
+
 /* Header */
 .site-header {
   position: relative;
@@ -250,11 +258,14 @@ h1, h2, h3, h4, h5, h6 {
 .site-content {
   background: url("https://2018.lehighvalley.wordcamp.org/files/2018/05/WCLVPA-Skyline-Banner-Light-Grey.png") bottom center repeat-x;
   background-size: contain;
+  padding: 1.5rem 1rem;
 }
 
 @media only screen and (min-width: 767px) {
   .site-content {
+    max-width: 1200px;
     padding: 0 3rem;
+    margin: 0 auto;
   }
 }
 
