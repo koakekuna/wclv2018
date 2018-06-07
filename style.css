@@ -509,3 +509,35 @@ aside.widget-area {
   transition: all .1s ease;
   content: "";
 }
+
+.wcorg-sponsors h2 {
+  color: #FFF;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+.wcorg-sponsor-level-gold h2 {
+  background-color: #d59b1e;
+}
+
+.wcorg-sponsor-level-silver h2 {
+  background-color: #6c7d8e;
+}
+
+.wcorg-sponsor-level-bronze h2 {
+  background-color: #cc5e1c;
+}
+
+.wcorg-organizer-description hr {
+  clear: both;
+}
+
+.wcorg-organizer-description h3 {
+  clear: none;
+}
+
+.wcorg-organizer-description img {
+  display: inline;
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
