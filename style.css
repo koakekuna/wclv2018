@@ -546,3 +546,22 @@ aside.widget-area {
   float: right;
   margin: 0 0 1rem 1rem;
 }
+
+.wcpt-schedule .wcpt-col-time,
+.wcpt-schedule .wcpt-col-track,
+.wcpt-schedule td {
+  border-bottom: 1px solid #ccc;
+  line-height: 1.4;
+  padding: 10px;
+}
+
+.wcpt-schedule th {
+  font-family: 'Carrois Gotthic', Arial, sans-serif;
+  font-weight: bold;
+}
+
+.wcpt-schedule .wcpt-session-speakers {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+}

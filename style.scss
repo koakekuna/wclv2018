@@ -528,3 +528,23 @@ aside.widget-area {
     margin: 0 0 1rem 1rem;
   }
 }
+
+// Schedule Page
+.wcpt-schedule {
+  .wcpt-col-time,
+  .wcpt-col-track, 
+  td {
+  border-bottom: 1px solid #ccc;
+  line-height: 1.4;
+  padding: 10px;
+  }
+  th {
+    font-family: 'Carrois Gotthic', Arial, sans-serif;
+    font-weight: bold;
+  }
+  .wcpt-session-speakers {
+    display: block;
+    font-size: 10px;
+    margin-top: 5px;
+  }
+}
