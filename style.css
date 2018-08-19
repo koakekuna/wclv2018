@@ -569,3 +569,9 @@ aside.widget-area {
 .wcorg-sponsor-level-in-kind h2 {
   background-color: #2badea;
 }
+
+.session-video a {
+  font-weight: bold;
+  padding-left: 40px;
+  font-size: 20px;
+}
